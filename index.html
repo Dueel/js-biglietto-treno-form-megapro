@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <title></title>
+  </head>
+  <body>
+
+    <main>
+      <!-- first div -->
+      <div class="row">
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <div class="container fancy">
+
+          <div class="firstDiv">
+            <div class="tab">
+              <label for="nome">Nome Cognome</label>
+              <input id="nome" type="text" name="nome" value="" placeholder="Mario Rossi">
+            </div>
+
+            <div class="tab">
+              <label for="distanza">Km da percorrere</label>
+              <input id="distanza" type="text" name="distanza" value="" placeholder="23">
+            </div>
+
+            <div class="tab">
+              <label for="eta">Fascia d'etá</label>
+              <select  id="eta" name="eta">
+                <option value="" selected>scegli un'opzione</option>
+                <option value="1">minorenne</option>
+                <option value="2">maggiorenne</option>
+                <option value="3">over 65</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="secondDiv">
+            <input id="genera" type="button" value="Genera">
+            <input id="annulla" type="button" value="Annulla">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- second div -->
+
+      <div class="row">
+        <h1>Il tuo biglietto</h1>
+        <div class="container">
+
+          <table>
+            <thead>
+              <tr>
+                <th>Nome passeggero</th>
+                <th>Offerta</th>
+                <th>Carrozza</th>
+                <th>Codice CP</th>
+                <th>Costo biglietto</th>
+              </tr>
+
+              <tr>
+                <td id="nomeUser"></td>
+                <td id="offerta"></td>
+                <td id="carrozza"></td>
+                <td id="codice"></td>
+                <td id="costo"></td>
+              </tr>
+            </thead>
+          </table>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="script/script.js"></script>
+
+  </body>
+</html>
