@@ -34,7 +34,7 @@ btnGenera.addEventListener('click', function(){
   document.getElementById('nomeUser').innerHTML = nome;
   carrozza.innerHTML = Math.floor(Math.random() * 10 ) + 1;
   codice.innerHTML =  Math.floor(Math.random() * 10000 ) + 90000;
-  costo.innerHTML = totale;
+  costo.innerHTML = '&euro; ' + totale;
 
 });
 

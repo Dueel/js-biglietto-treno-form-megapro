@@ -15,7 +15,6 @@ body{
 main{
   width: 70%;
   height: 70%;
-  /* background-color: red; */
   margin: auto;
 }
 
@@ -25,8 +24,17 @@ h1{
   margin-bottom: 20px;
 }
 
+h1,
+h3{
+  text-transform: uppercase;
+}
+
+h3{
+  text-align: left;
+}
+
 .container{
-  padding: 20px 0;
+  padding: 20px;
   text-align: center;
   background-color: white;
 }
@@ -83,9 +91,23 @@ select{
 }
 
 table{
-  margin: auto;
+  width: 100%;
+  /* margin: auto; */
+  text-align: left;
+  border-top: 1px solid #757575;
+  border-bottom: 1px solid #757575;
+  border-spacing: 0;
 }
 
-th{
-  width: 200px;
+th,
+td{
+  width: calc(100% / 5);
+  height: 50px;
+  padding: 5px;
 }
+
+th:first-child,
+td:first-child{
+  background-color: #757575;
+}
+
